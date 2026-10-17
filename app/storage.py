@@ -11,9 +11,18 @@ from pathlib import Path
 
 from app.models import Service
 
-CONFIG_DIR = Path.home() / ".devlauncher"
+PROJECT_DIR = Path(__file__).resolve().parent.parent
+
+# Data directory
+CONFIG_DIR = PROJECT_DIR / "data"
+CONFIG_DIR.mkdir(parents=True, exist_ok=True)
+
+# SQLite database
 DB_FILE = CONFIG_DIR / "devlauncher.db"
+
+# Legacy JSON file
 LEGACY_JSON = CONFIG_DIR / "services.json"
+
 MAX_LOG_ROWS = 5000  # per service
 
 SCHEMA = """
