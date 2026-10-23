@@ -186,10 +186,4 @@ pip install -r requirements.txt
 python main.py
 ```
 
-Guidelines:
-
-- No Qt imports inside `core/`
-- No process/filesystem logic inside `ui/`
-- Test all three service types before submitting
-
 ---
