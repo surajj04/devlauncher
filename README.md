@@ -193,13 +193,3 @@ Guidelines:
 - Test all three service types before submitting
 
 ---
-
-## ✦ License
-
-MIT — see [LICENSE](LICENSE) for details.
-
----
-
-<p align="center">
-  <sub>Built with PySide6 · Made for developers who are tired of terminal tab juggling</sub>
-</p>
