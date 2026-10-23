@@ -112,53 +112,6 @@ Logs:           docker logs -f <container>
 > Create the container once with `docker run -d --name <name> ...`,
 > then register it in DevLauncher and manage it with one click.
 
----
-
-## ✦ Configuration
-
-Everything lives in one file:
-
-```
-~/.devlauncher/services.json
-```
-
-**Example:**
-
-```json
-{
-  "services": [
-    {
-      "id": "a1b2c3d4",
-      "name": "FastAPI Dev",
-      "type": "command",
-      "command": "uvicorn main:app --reload",
-      "cwd": "/home/me/projects/api",
-      "venv": ".venv",
-      "category": "Web Apps",
-      "icon": "🚀"
-    },
-    {
-      "id": "e5f6g7h8",
-      "name": "MySQL",
-      "type": "systemd",
-      "service_name": "mysql",
-      "icon": "🐬"
-    },
-    {
-      "id": "i9j0k1l2",
-      "name": "Redis Container",
-      "type": "docker",
-      "container_name": "redis-dev",
-      "icon": "🧱"
-    }
-  ]
-}
-```
-
-You can back it up, share it, edit it by hand, or check it into your dotfiles.
-If it's deleted, DevLauncher creates a fresh one on next launch.
-
----
 
 ## ✦ How It Works
 
