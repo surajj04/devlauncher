@@ -8,3 +8,32 @@ wheels/
 
 # Virtual environments
 .venv
+.uv/
+
+# PyInstaller
+*.spec.bak
+
+# Debian packages
+*.deb
+deb-build/
+
+# Runtime data (SQLite database, WAL files, logs)
+data/
+*.db
+*.db-wal
+*.db-shm
+*.db.bak
+*.log
+
+# Testing / linting caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
